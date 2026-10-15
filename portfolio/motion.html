@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Motion Design — Thiago Bento</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo">Maklam<span>.</span></a>
+      <div class="actions">
+        <button id="langBtn" class="btn-small">EN</button>
+        <button id="themeBtn" class="btn-small">◐</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <a href="index.html#projects" class="back" data-i18n="back"></a>
+        <h1 data-i18n="motion_title"></h1>
+        <p class="lead" data-i18n="motion_text"></p>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <div class="cards">
+          <article class="card">
+            <div class="thumb"><img src="assets/motion/1.jpg" alt="Projeto 1"></div>
+            <h3>Nome do projeto</h3>
+            <p>Descrição curta do projeto.</p>
+            <a <a href="https://youtube.com/..." class="link" target="_blank" rel="noopener">Assistir →</a>
+          </article>
+          <!-- copie o bloco <article> inteiro para cada novo projeto -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container"><span>© <span id="year"></span> Seu Nome</span></div>
+  </footer>
+  <div class="modal" id="modal" aria-hidden="true">
+    <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+    <div class="modal-body">
+      <h3 id="modalTitle"></h3>
+      <div class="gallery" id="gallery"></div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+    <img id="lightboxImg" alt="">
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

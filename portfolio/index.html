@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thiago Bento — Portfolio</title>
+  <meta name="description" content="Designer, web developer and illustrator.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a href="#home" class="logo">Maklam<span>.</span></a>
+      <nav id="menu" class="menu">
+        <a href="#about" data-i18n="nav_about"></a>
+        <a href="#projects" data-i18n="nav_projects"></a>
+        <a href="#skills" data-i18n="nav_skills"></a>
+        <a href="#contact" data-i18n="nav_contact"></a>
+      </nav>
+      <div class="actions">
+        <button id="langBtn" class="btn-small" aria-label="Change language">EN</button>
+        <button id="themeBtn" class="btn-small" aria-label="Toggle theme">◐</button>
+        <button id="burger" class="btn-small burger" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <p class="eyebrow" data-i18n="hero_eyebrow"></p>
+        <h1 data-i18n="hero_title"></h1>
+        <p class="lead" data-i18n="hero_text"></p>
+        <div class="cta">
+          <a href="#projects" class="btn btn-solid" data-i18n="hero_cta1"></a>
+          <a href="#contact" class="btn btn-outline" data-i18n="hero_cta2"></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container grid-2">
+        <h2 data-i18n="about_title"></h2>
+        <div>
+          <p data-i18n="about_p1"></p>
+          <p data-i18n="about_p2"></p>
+          <ul class="stats">
+            <li><strong>40+</strong><span data-i18n="stat1"></span></li>
+            <li><strong>2+</strong><span data-i18n="stat2"></span></li>
+            <li><strong>100%</strong><span data-i18n="stat3"></span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2 data-i18n="projects_title"></h2>
+        <div class="cards">
+          <article class="card">
+            <div class="thumb">
+              <img src="assets/motion.jpg" alt="Motion Design">
+            </div>
+            <h3 data-i18n="p1_title"></h3>
+            <p data-i18n="p1_text"></p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <a href="motion.html" class="link" data-i18n="view"></a>
+          </article>
+          <article class="card">
+            <div class="thumb">
+              <img src="assets/designs.jpg" alt="Designs">
+            </div>
+            <h3 data-i18n="p2_title"></h3>
+            <p data-i18n="p2_text"></p>
+            <div class="tags"><span>Illustration</span><span>Graphic Design</span><span>UI/UX Design</span></div>
+            <a href="designs.html" class="link" data-i18n="view"></a>
+          </article>
+          <article class="card">
+            <div class="thumb">
+              <img src="assets/site.jpg" alt="Site">
+            </div>
+            <h3 data-i18n="p3_title"></h3>
+            <p data-i18n="p3_text"></p>
+            <div class="tags"><span>Supabase</span><span>Github</span><span>Frontend</span><span>Backend</span></div>
+            <a href="sites.html" class="link" data-i18n="view"></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 data-i18n="skills_title"></h2>
+        <div class="skills">
+          <div class="skill">
+            <div class="skill-head"><span>HTML / CSS</span><span>90%</span></div>
+            <div class="bar"><i style="--w:90%"></i></div>
+          </div>
+          <div class="skill">
+            <div class="skill-head"><span>JavaScript</span><span>75%</span></div>
+            <div class="bar"><i style="--w:75%"></i></div>
+          </div>
+          <div class="skill">
+            <div class="skill-head"><span data-i18n="sk_design"></span><span>90%</span></div>
+            <div class="bar"><i style="--w:90%"></i></div>
+          </div>
+          <div class="skill">
+            <div class="skill-head"><span data-i18n="sk_illus"></span><span>85%</span></div>
+            <div class="bar"><i style="--w:85%"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container grid-2">
+        <div>
+          <h2 data-i18n="contact_title"></h2>
+          <p data-i18n="contact_text"></p>
+          <p><a class="link" href="https://wa.me/5564992100678" target="_blank" rel="noopener">Whatsapp</a> ·
+            <a class="link" href="https://github.com/Maklam14" target="_blank" rel="noopener">GitHub</a> ·
+            <a class="link" href="https://instagram.com/_maklam" target="_blank" rel="noopener">Instagram</a> ·
+            <a class="link" href="https://instagram.com/_maklam" target="_blank" rel="noopener">Behance</a> ·
+            <a class="link" href="https://instagram.com/_maklam" target="_blank" rel="noopener">Linkedin</a>
+          </p>
+        </div>
+        <form id="form" class="form">
+          <label><span data-i18n="f_name"></span><input name="name" required></label>
+          <label><span data-i18n="f_email"></span><input name="email" type="email" required></label>
+          <label><span data-i18n="f_msg"></span><textarea name="message" rows="5" required></textarea></label>
+          <button class="btn btn-solid" type="submit" data-i18n="f_send"></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container"><span>© <span id="year"></span> Thiago Bento</span><span data-i18n="footer"></span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
